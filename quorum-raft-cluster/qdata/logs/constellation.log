@@ -1,0 +1,5 @@
+nohup: appending output to 'nohup.out'
+2018 Feb-01 22:31:00743663 [INFO] Log level is LevelDebug
+2018 Feb-01 22:31:00810160 [DEBUG] Configuration: Config {cfgUrl = "http://52.163.219.94:9000/", cfgPort = 9000, cfgSocket = Just "qdata/tm.ipc", cfgOtherNodes = ["http://52.163.243.218:9000/"], cfgPublicKeys = ["raft/constellation.pub"], cfgPrivateKeys = ["raft/constellation.key"], cfgAlwaysSendTo = [], cfgPasswords = Nothing, cfgStorage = "qdata/constellation", cfgIpWhitelist = [], cfgJustShowVersion = False, cfgJustGenerateKeys = [], cfgVerbosity = 3}
+2018 Feb-01 22:31:00810584 [INFO] Utilizing 2 core(s)
+2018 Feb-01 22:31:00810934 [INFO] Constructing Enclave using keypairs [("raft/constellation.pub","raft/constellation.key")]

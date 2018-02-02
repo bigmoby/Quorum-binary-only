@@ -1,0 +1,18 @@
+nohup: appending output to 'nohup.out'
+panic: MustNew error: Get http+unix://c/upcheck: dial unix qdata/tm.ipc: connect: no such file or directory
+
+goroutine 1 [running]:
+panic(0xe9e1e0, 0xc4201d9320)
+	/usr/local/go/src/runtime/panic.go:500 +0x1a1
+github.com/ethereum/go-ethereum/private/constellation.MustNew(0xc42001000f, 0x7, 0xc42001000f)
+	/home/bigmoby/workspace/quorum/build/_workspace/src/github.com/ethereum/go-ethereum/private/constellation/constellation.go:63 +0x114
+github.com/ethereum/go-ethereum/private.FromEnvironmentOrNil(0x1048499, 0xe, 0xc4201da6c0, 0xc4201da6a0)
+	/home/bigmoby/workspace/quorum/build/_workspace/src/github.com/ethereum/go-ethereum/private/private.go:19 +0x52
+github.com/ethereum/go-ethereum/private.init()
+	/home/bigmoby/workspace/quorum/build/_workspace/src/github.com/ethereum/go-ethereum/private/private.go:22 +0x67
+github.com/ethereum/go-ethereum/core.init()
+	/home/bigmoby/workspace/quorum/build/_workspace/src/github.com/ethereum/go-ethereum/core/types.go:49 +0x110
+github.com/ethereum/go-ethereum/cmd/utils.init()
+	/home/bigmoby/workspace/quorum/build/_workspace/src/github.com/ethereum/go-ethereum/cmd/utils/flags.go:1240 +0x6c
+main.init()
+	/home/bigmoby/workspace/quorum/build/_workspace/src/github.com/ethereum/go-ethereum/cmd/geth/usage.go:331 +0x76
