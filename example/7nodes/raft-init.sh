@@ -3,13 +3,13 @@ set -u
 set -e
 
 echo "[*] Cleaning up temporary data directories"
-rm -rf qdata
-mkdir -p qdata/logs
+rm -rf home/workspace/example/7nodes/qdata
+mkdir -p home/workspace/example/7nodes/qdata/logs
 
 echo "[*] Configuring node 1 (permissioned)"
 mkdir -p qdata/dd1/{keystore,geth}
-cp permissioned-nodes.json qdata/dd1/static-nodes.json
-cp permissioned-nodes.json qdata/dd1/
-cp keys/key1 qdata/dd1/keystore
+cp home/workspace/example/7nodes/permissioned-nodes.json home/workspace/example/7nodes/qdata/dd1/static-nodes.json
+cp home/workspace/example/7nodes/permissioned-nodes.json home/workspace/example/7nodes/qdata/dd1/
+cp home/workspace/example/7nodes/keys/key1 home/workspace/example/7nodes/qdata/dd1/keystore
 cp raft/nodekey1 qdata/dd1/geth/nodekey
-geth --datadir qdata/dd1 init genesis.json
+geth --datadir home/workspace/example/7nodes/qdata/dd1 init home/workspace/example/7nodes/genesis.json
