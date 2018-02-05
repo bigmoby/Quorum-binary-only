@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
 
-./raft-init.sh
+./home/workspace/example/7nodes/raft-init.sh
 
-./raft-start.sh
+./home/workspace/example/7nodes/raft-start.sh
