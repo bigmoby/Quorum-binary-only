@@ -3,6 +3,7 @@ set -u
 set -e
 
 echo "[*] Cleaning up temporary data directories"
+cd /home/workspace/example/7nodes
 rm -rf qdata
 mkdir -p qdata/logs
 
