@@ -11,7 +11,7 @@ nohup constellation-node tm1.conf 2>> qdata/logs/constellation1.log &
 sleep 1
 
 echo "[*] Starting node 1 (permissioned)"
-PRIVATE_CONFIG=tm1.conf nohup geth --datadir qdata/dd1 $GLOBAL_ARGS --permissioned --raftport 50401 --rpcport 22000 --port 21000 --unlock 0 --password passwords.txt 2>>qdata/logs/1.log &
+PRIVATE_CONFIG=tm1.conf nohup geth --datadir qdata/dd1 $GLOBAL_ARGS --permissioned --raftport 50401 --rpc --rpcport "22000" --rpcaddr "0.0.0.0" --rpccorsdomain "*" --port 21000 --unlock 0 --password passwords.txt 2>>qdata/logs/1.log &
 
 echo "[*] Waiting for nodes to start"
 sleep 10
